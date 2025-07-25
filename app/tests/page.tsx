@@ -10,6 +10,7 @@ import TestAlertDialog from "../components/share/TestAlertDialog";
 import TestAspectRatio from "../components/share/TestAspextRatio";
 import TestAvator from "../components/share/TestAvator";
 import Testbadge from "../components/share/TestBadge";
+import TestBreadcrumb from "../components/share/TestBreadcrumb";
 
 const TestsPage = () => {
   const [state, setState] = useState(false);
@@ -52,7 +53,8 @@ const TestsPage = () => {
           {state && <TestAlertDialog />}
           {state && <TestAspectRatio />}
           {state && <TestAvator />}
-          <Testbadge />
+          {state && <Testbadge />}
+          {state && <TestBreadcrumb current="Test Page" />}
         </section>
       </section>
     </React.Fragment>
