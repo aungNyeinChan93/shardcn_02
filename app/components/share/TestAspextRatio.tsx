@@ -9,7 +9,7 @@ const TestAspectRatio = () => {
       Aspect Ratio
       <section>
         <AspectRatio
-          className="bg-cyan-50 rounded flex flex-col sm:flex-row justify-center items-center space-x-1.5 gap-3"
+          className="bg-cyan-50 rounded flex flex-col sm:flex-row justify-center items-center space-x-1.5 gap-3 "
           ratio={16 / 9}
         >
           <Image
