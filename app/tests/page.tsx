@@ -15,6 +15,7 @@ import TestCalender from "../components/share/TestCalender";
 import TestCarousel from "../components/share/TestCarousel";
 import TestCollapsible from "../components/share/TestCollapsible";
 import TestPopOver from "../components/share/TestPopOver";
+import TestCommand from "../components/share/TestCommand";
 
 const TestsPage = () => {
   const [state, setState] = useState(false);
@@ -62,7 +63,9 @@ const TestsPage = () => {
           {state && <TestCalender />}
           {state && <TestCarousel />}
           {state && <TestCollapsible />}
-          <TestPopOver />
+          {state && <TestPopOver />}
+
+          <TestCommand />
         </section>
       </section>
     </React.Fragment>
