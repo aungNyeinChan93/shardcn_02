@@ -22,6 +22,10 @@ const TestsPage = () => {
           <Link href={"/"}>Go To Home</Link>
         </Button>
 
+        <Button asChild variant={"alert"}>
+          <Link href={"#"}>Go To Home</Link>
+        </Button>
+
         <Button variant={"default"} size={"sm"}>
           size -sm{" "}
         </Button>
@@ -46,7 +50,7 @@ const TestsPage = () => {
           {state && <TestAlert />}
           {state && <TestAlertDialog />}
           {state && <TestAspectRatio />}
-          <TestAvator />
+          {state && <TestAvator />}
         </section>
       </section>
     </React.Fragment>

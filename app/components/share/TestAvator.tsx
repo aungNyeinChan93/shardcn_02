@@ -10,7 +10,7 @@ const TestAvator = () => {
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <Avatar className="w-34 h-34">
-          <AvatarImage src="https://github.com/shadcn.png2" />
+          <AvatarImage src="https://github.com/shadcn.png" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
       </section>
