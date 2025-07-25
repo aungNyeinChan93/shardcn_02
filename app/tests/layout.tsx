@@ -6,7 +6,7 @@ interface TestLayoutProps {
 const TestLayout: React.FC<TestLayoutProps> = ({ children }) => {
   return (
     <React.Fragment>
-      <section className="w-11/12 mx-auto my-4 p-4 bg-slate-200 h-screen">
+      <section className="w-11/12 mx-auto my-4 p-4 bg-slate-200 min-h-screen">
         {children}
       </section>
     </React.Fragment>

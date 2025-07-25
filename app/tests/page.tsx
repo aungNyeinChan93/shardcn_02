@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import TestAccordion from "../components/share/TestAccordion";
 import TestAlert from "../components/share/TestAlert";
 import TestAlertDialog from "../components/share/TestAlertDialog";
+import TestAspectRatio from "../components/share/TestAspextRatio";
 
 const TestsPage = () => {
   const [state, setState] = useState(false);
@@ -43,6 +44,7 @@ const TestsPage = () => {
           {state && <TestAccordion />}
           {state && <TestAlert />}
           {state && <TestAlertDialog />}
+          <TestAspectRatio />
         </section>
       </section>
     </React.Fragment>
