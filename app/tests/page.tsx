@@ -1,11 +1,12 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Loader2Icon } from "lucide-react";
+import { House, Loader2Icon } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
 import TestAccordion from "../components/share/TestAccordion";
 import TestAlert from "../components/share/TestAlert";
+import TestAlertDialog from "../components/share/TestAlertDialog";
 
 const TestsPage = () => {
   const [state, setState] = useState(false);
@@ -27,19 +28,21 @@ const TestsPage = () => {
           variant={"secondary"}
           size={"lg"}
         >
-          Toggle
+          Toggle <House size={"sm"} />
         </Button>
         <Button
           className="ms-1 inline-flex lg:min-w-15"
           variant={"outline"}
           size={"icon"}
         >
-          👍 <Loader2Icon className="animate-spin" />
+          <House size={28} strokeWidth={1.5} absoluteStrokeWidth />
+          <Loader2Icon className="animate-spin" />
         </Button>
 
         <section>
           {state && <TestAccordion />}
           {state && <TestAlert />}
+          {state && <TestAlertDialog />}
         </section>
       </section>
     </React.Fragment>
