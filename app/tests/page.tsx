@@ -13,6 +13,8 @@ import Testbadge from "../components/share/TestBadge";
 import TestBreadcrumb from "../components/share/TestBreadcrumb";
 import TestCalender from "../components/share/TestCalender";
 import TestCarousel from "../components/share/TestCarousel";
+import TestCollapsible from "../components/share/TestCollapsible";
+import TestPopOver from "../components/share/TestPopOver";
 
 const TestsPage = () => {
   const [state, setState] = useState(false);
@@ -58,8 +60,9 @@ const TestsPage = () => {
           {state && <Testbadge />}
           {state && <TestBreadcrumb current="Test Page" />}
           {state && <TestCalender />}
-
-          <TestCarousel />
+          {state && <TestCarousel />}
+          {state && <TestCollapsible />}
+          <TestPopOver />
         </section>
       </section>
     </React.Fragment>
