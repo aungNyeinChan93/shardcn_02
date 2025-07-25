@@ -64,8 +64,7 @@ const TestsPage = () => {
           {state && <TestCarousel />}
           {state && <TestCollapsible />}
           {state && <TestPopOver />}
-
-          <TestCommand />
+          {state && <TestCommand />}
         </section>
       </section>
     </React.Fragment>
