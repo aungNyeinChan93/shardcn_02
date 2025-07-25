@@ -54,7 +54,7 @@ function Button({
 
   return (
     <Comp
-      disabled={status ? true : false}
+      disabled={status && status === "isDisable" ? true : false}
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className, status }))}
       {...props}
