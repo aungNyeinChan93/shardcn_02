@@ -12,6 +12,7 @@ import TestAvator from "../components/share/TestAvator";
 import Testbadge from "../components/share/TestBadge";
 import TestBreadcrumb from "../components/share/TestBreadcrumb";
 import TestCalender from "../components/share/TestCalender";
+import TestCarousel from "../components/share/TestCarousel";
 
 const TestsPage = () => {
   const [state, setState] = useState(false);
@@ -57,6 +58,8 @@ const TestsPage = () => {
           {state && <Testbadge />}
           {state && <TestBreadcrumb current="Test Page" />}
           {state && <TestCalender />}
+
+          <TestCarousel />
         </section>
       </section>
     </React.Fragment>
