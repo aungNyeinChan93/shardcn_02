@@ -56,8 +56,7 @@ const TestsPage = () => {
           {state && <TestAvator />}
           {state && <Testbadge />}
           {state && <TestBreadcrumb current="Test Page" />}
-
-          <TestCalender />
+          {state && <TestCalender />}
         </section>
       </section>
     </React.Fragment>
