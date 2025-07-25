@@ -28,6 +28,9 @@ const buttonVariants = cva(
         lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
         icon: "size-9",
       },
+      status: {
+        isDisable: "cursor-not-allowed opacity-50",
+      },
     },
     defaultVariants: {
       variant: "default",
@@ -40,6 +43,7 @@ function Button({
   className,
   variant,
   size,
+  status,
   asChild = false,
   ...props
 }: React.ComponentProps<"button"> &
@@ -50,8 +54,9 @@ function Button({
 
   return (
     <Comp
+      disabled={status ? true : false}
       data-slot="button"
-      className={cn(buttonVariants({ variant, size, className }))}
+      className={cn(buttonVariants({ variant, size, className, status }))}
       {...props}
     />
   );

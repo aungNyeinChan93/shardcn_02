@@ -15,15 +15,15 @@ const TestsPage = () => {
   return (
     <React.Fragment>
       <section>
-        <h3 className="text-2xl font-semibold text-center p-3 text-green-400">
+        <h3 className="text-2xl font-semibold text-center p-3 text-green-400 ">
           Tests Page
         </h3>
         <Button asChild variant={"link"}>
           <Link href={"/"}>Go To Home</Link>
         </Button>
 
-        <Button asChild variant={"alert"}>
-          <Link href={"#"}>Go To Home</Link>
+        <Button asChild status={"isDisable"} variant={"alert"}>
+          <Link href={"#"}>Test Customize</Link>
         </Button>
 
         <Button variant={"default"} size={"sm"}>
